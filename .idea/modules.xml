@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/pmc.iml" filepath="$PROJECT_DIR$/.idea/pmc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmc-eureka/pmc-eureka.iml" filepath="$PROJECT_DIR$/pmc-eureka/pmc-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmc-eureka-bak/pmc-eureka-bak.iml" filepath="$PROJECT_DIR$/pmc-eureka-bak/pmc-eureka-bak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmc-prodiver/pmc-prodiver.iml" filepath="$PROJECT_DIR$/pmc-prodiver/pmc-prodiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/pmc-webapp/pmc-webapp.iml" filepath="$PROJECT_DIR$/pmc-webapp/pmc-webapp.iml" />
     </modules>
   </component>

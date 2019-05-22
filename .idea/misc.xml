@@ -4,7 +4,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pmc-webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-prodiver/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-eureka-bak/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
