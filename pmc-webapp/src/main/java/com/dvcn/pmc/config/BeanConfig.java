@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  * @date 2019/5/22 14:51
  * @description: TODO
  */
-@Configuration // 等价于spring application配置文件
+//@Configuration // 等价于spring application配置文件
 public class BeanConfig {
 
     /**
@@ -24,8 +24,8 @@ public class BeanConfig {
       * @auther: JiangT
       * @date: 2019/5/22 14:53
       */
-    @LoadBalanced
-    @Bean
+    //@LoadBalanced
+    //@Bean
     public RestTemplate restTemplate () {
         return new RestTemplate();
     }

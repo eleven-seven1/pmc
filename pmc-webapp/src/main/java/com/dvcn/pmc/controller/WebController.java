@@ -1,10 +1,10 @@
 package com.dvcn.pmc.controller;
 
+import com.dvcn.pmc.service.WebService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author JiangT
@@ -14,20 +14,17 @@ import org.springframework.web.client.RestTemplate;
  * @description: TODO
  */
 @RestController
+@Slf4j
 public class WebController {
 
-    @Autowired
-    private RestTemplate restTemplate;
 
+    @Autowired
+    private WebService webService;
 
     @RequestMapping("/web/hello")
     public String Helle() {
-
-        //调用springCloud服务提供者提供的服务
-        //ResponseEntity<String> forEntity = restTemplate.getForEntity("http://localhost:8081/hello", String.class);
-        ResponseEntity<String> forEntity = restTemplate.getForEntity("http://PMC-PROVIDER/hello", String.class);
-
-        return forEntity.getBody();
+        log.info("测试日志");
+        return webService.Hello();
 
     }
 }

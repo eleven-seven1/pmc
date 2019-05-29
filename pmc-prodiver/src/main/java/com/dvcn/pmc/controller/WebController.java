@@ -1,10 +1,12 @@
 package com.dvcn.pmc.controller;
 
+import com.dvcn.pmc.bean.Test;
+import com.dvcn.pmc.service.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 /**
  * @author JiangT
@@ -17,13 +19,15 @@ import org.springframework.web.client.RestTemplate;
 public class WebController {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private ITestService testService;
 
 
     @RequestMapping("/provider/hello")
-    public String Helle() {
+    public String Hello() {
 
-        return "Hello Spring Cloud";
+        List<Test> tests = testService.queryByList();
+
+        return "Hello " + tests.get(0).getName();
 
     }
 }

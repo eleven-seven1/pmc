@@ -6,7 +6,9 @@
         <option value="$PROJECT_DIR$/pmc-webapp/pom.xml" />
         <option value="$PROJECT_DIR$/pmc-prodiver/pom.xml" />
         <option value="$PROJECT_DIR$/pmc-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/pmc-eureka-bak/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
   </component>
