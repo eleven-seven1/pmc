@@ -1,9 +1,8 @@
 package com.dvcn.pmc.test.mapper;
 
-import com.dvcn.pmc.bean.Test;
+import com.dvcn.pmc.test.Test;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

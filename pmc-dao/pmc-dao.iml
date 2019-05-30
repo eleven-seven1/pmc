@@ -73,5 +73,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.46" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
     <orderEntry type="module" module-name="pmc-common" />
+    <orderEntry type="module" module-name="pmc-pojo" />
   </component>
 </module>

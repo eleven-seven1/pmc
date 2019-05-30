@@ -1,7 +1,7 @@
 package com.dvcn.pmc.controller;
 
-import com.dvcn.pmc.bean.Test;
 import com.dvcn.pmc.service.ITestService;
+import com.dvcn.pmc.test.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

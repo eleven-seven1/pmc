@@ -1,7 +1,7 @@
 package com.dvcn.pmc.service.impl;
 
-import com.dvcn.pmc.bean.Test;
 import com.dvcn.pmc.service.ITestService;
+import com.dvcn.pmc.test.Test;
 import com.dvcn.pmc.test.mapper.TestDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

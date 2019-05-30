@@ -15,7 +15,8 @@
         <module>pmc-prodiver</module>
         <module>pmc-webapp</module>
         <module>pmc-eureka</module>
-        <module>demo</module>
+        <module>pmc-pojo</module>
+        <module>pmc-interface</module>
     </modules>
 
 </project>

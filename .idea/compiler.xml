@@ -10,6 +10,8 @@
         <module name="pmc-common" />
         <module name="pmc-dao" />
         <module name="pmc-eureka" />
+        <module name="pmc-interface" />
+        <module name="pmc-pojo" />
         <module name="pmc-prodiver" />
         <module name="pmc-webapp" />
       </profile>
@@ -20,6 +22,8 @@
       <module name="pmc-dao" target="1.8" />
       <module name="pmc-eureka" target="1.8" />
       <module name="pmc-eureka-bak" target="1.8" />
+      <module name="pmc-interface" target="1.8" />
+      <module name="pmc-pojo" target="1.8" />
       <module name="pmc-prodiver" target="1.8" />
       <module name="pmc-webapp" target="1.8" />
     </bytecodeTargetLevel>

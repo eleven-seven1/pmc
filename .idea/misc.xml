@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/pmc-common/pom.xml" />
         <option value="$PROJECT_DIR$/pmc-dao/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pmc-pojo/pom.xml" />
       </list>
     </option>
   </component>
