@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- 当Mapper接口和XML文件关联的时候， namespace的值就需要配置成接口的全限定名称 -->
+<mapper namespace="com.example.demo.dao.TApplyProDao">
+
+    <sql id="Base_Column_List" >
+        id,apply_no,custom_id,custom_no,custom_name,card_no,prd_id,prd_code,
+        prd_name,buss_type_id,buss_type_name,apply_dep_id,apply_dep_name,apply_state,
+        credit_amount,loan_amount,rate_value,period,repay_id,repay_name,loan_type_id,
+        loan_type_name,rec_account,in_dep_id,in_dep_name,repay_account,repay_dep_id,
+        repay_dep_name,approach,gps_location,merchant_id,fund_id,guarantee_id,platform_id,
+        loan_way,apply_time,finance_channel,json,discount_rate,advise_discount,final_rate,
+        advise_result,advise_amount,warning_status,flag,user_id,serial_no,kkzq,per_amount,
+        per_service_charge,comerchant_apply_no,comerchant_order_no,receive_url,approval_note,
+        surplus_receive_count,second_account_no,rent_receive_url,prod_type,auth_receive_url,
+        auth_receive_count,is_agriculture,is_poverty1_flag,is_school_flag,is_study_flag,
+        is_poverty2_flag,is_pratt_flag,is_unemployment_flag,is_pioneer_flag,investing_area,
+        investing_major_in,buss_type,loan_mode,rate_type,rate_float,main_guarantee,is_limit_major,
+        decision_tags,decision_note
+    </sql>
+
+    <sql id="contract_List" >
+        id,contract_no,contract_name,contract_type,contract_model_id,custom_id,apply_id,apply_no,
+        prd_code,prd_id,begin_date,end_date,deadline,save_path,flow_id,user_id,user_name,contract_amount,
+        bank_no,belong_bank,rec_account,in_dep_id,in_dep_name,repay_account,repay_dep_id,repay_dep_name,
+        t_state,pro_overdue_time,pro_period,org_no
+    </sql>
+
+    <sql id="material_List">
+        id,m_type,big_code,big_name,small_code,small_name,meterial_name,regist_date,regist_user,img_id,
+        apply_id,customer_id,img_plat_result,img_current_date
+    </sql>
+
+    <select id="queryAll" resultType="com.example.demo.bean.TApplyPro">
+        select <include refid="Base_Column_List" />
+        from t_apply_pro
+    </select>
+
+    <select id="queryByApplyNo" resultType="com.example.demo.bean.TContract">
+        select <include refid="contract_List" />
+        from t_contract where  apply_no = #{apply_no,jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryByApplyId" resultType="com.example.demo.bean.TMaterial">
+        select
+        <include refid="material_List"/>
+        from t_material where apply_id = #{apply_id,jdbcType=BIGINT}
+    </select>
+
+    <select id="queryByImageIdList" resultType="com.example.demo.bean.TImage">
+        select id,img_name,img_fat,img_path,img_file
+        from t_image where id in
+        <foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+    <update id="updateByApplyId">
+        update t_material set
+        <trim suffixOverrides=",">
+            <if test="m_type != null  ">
+                m_type=#{m_type,jdbcType=CHAR},
+            </if>
+            <if test="big_code != null  ">
+                big_code=#{big_code,jdbcType=CHAR},
+            </if>
+            <if test="big_name != null  ">
+                big_name=#{big_name,jdbcType=VARCHAR},
+            </if>
+            <if test="small_code != null  ">
+                small_code=#{small_code,jdbcType=CHAR},
+            </if>
+            <if test="small_name != null  ">
+                small_name=#{small_name,jdbcType=VARCHAR},
+            </if>
+            <if test="meterial_name != null  ">
+                meterial_name=#{meterial_name,jdbcType=VARCHAR},
+            </if>
+            <if test="regist_date != null  ">
+                regist_date=#{regist_date,jdbcType=DATE},
+            </if>
+            <if test="regist_user != null  ">
+                regist_user=#{regist_user,jdbcType=CHAR},
+            </if>
+            <if test="img_id != null  ">
+                img_id=#{img_id,jdbcType=BIGINT},
+            </if>
+            <if test="apply_id != null  ">
+                apply_id=#{apply_id,jdbcType=BIGINT},
+            </if>
+            <if test="customer_id != null  ">
+                customer_id=#{customer_id,jdbcType=BIGINT},
+            </if>
+
+            <if test="img_plat_result != null  ">
+                img_plat_result=#{img_plat_result,jdbcType=VARCHAR},
+            </if>
+            <if test="img_current_date != null  ">
+                img_current_date=#{img_current_date,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        where apply_id=#{apply_id,jdbcType=BIGINT}
+    </update>
+
+
+</mapper>

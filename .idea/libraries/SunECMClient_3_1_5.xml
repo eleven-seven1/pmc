@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SunECMClient-3.1.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sunyard/SunECMClient/SunECMClient-3.1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
