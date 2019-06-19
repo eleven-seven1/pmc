@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.dvcn.pmc</groupId>
-	<artifactId>pmc-prodiver</artifactId>
+	<artifactId>pmc-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pmc-prodiver</name>
+	<name>pmc-provider</name>
 	<description>Project for Spring Boot</description>
 
 	<properties>

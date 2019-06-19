@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/pmc-eureka/pmc-eureka.iml" filepath="$PROJECT_DIR$/pmc-eureka/pmc-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/pmc-interface/pmc-interface.iml" filepath="$PROJECT_DIR$/pmc-interface/pmc-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pmc-pojo/pmc-pojo.iml" filepath="$PROJECT_DIR$/pmc-pojo/pmc-pojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pmc-prodiver/pmc-prodiver.iml" filepath="$PROJECT_DIR$/pmc-prodiver/pmc-prodiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmc-provider/pmc-provider.iml" filepath="$PROJECT_DIR$/pmc-provider/pmc-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/pmc-webapp/pmc-webapp.iml" filepath="$PROJECT_DIR$/pmc-webapp/pmc-webapp.iml" />
     </modules>
   </component>

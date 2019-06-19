@@ -12,7 +12,7 @@
     <modules>
         <module>pmc-common</module>
         <module>pmc-dao</module>
-        <module>pmc-prodiver</module>
+        <module>pmc-provider</module>
         <module>pmc-webapp</module>
         <module>pmc-eureka</module>
         <module>pmc-pojo</module>

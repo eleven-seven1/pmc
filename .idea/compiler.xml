@@ -13,8 +13,13 @@
         <module name="pmc-eureka" />
         <module name="pmc-interface" />
         <module name="pmc-pojo" />
-        <module name="pmc-prodiver" />
         <module name="pmc-webapp" />
+      </profile>
+      <profile name="Annotation profile for pmc-provider" enabled="true">
+        <sourceOutputDir name="../pmc-prodiver/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../pmc-prodiver/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pmc-prodiver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
