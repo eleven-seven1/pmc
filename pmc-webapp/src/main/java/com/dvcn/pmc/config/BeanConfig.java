@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * @company sunyard
  * @projectName pmc
  * @date 2019/5/22 14:51
- * @description: TODO
+ * @description: 测试
  */
 //@Configuration // 等价于spring application配置文件
 public class BeanConfig {

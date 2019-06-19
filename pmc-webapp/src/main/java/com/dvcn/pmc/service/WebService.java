@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @company sunyard
  * @projectName pmc
  * @date 2019/5/28 9:51
- * @description: TODO
+ * @description: 测试消费者接口 通过FeignClient调用远程服务
  */
 @FeignClient("pmc-provider")
 @Service

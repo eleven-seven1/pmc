@@ -7,7 +7,7 @@ import lombok.Data;
  * @company sunyard
  * @projectName pmc
  * @date 2019/5/28 14:59
- * @description: TODO
+ * @description: 测试实体类
  */
 @Data
 public class Test {

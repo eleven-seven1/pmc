@@ -11,7 +11,7 @@ import java.util.List;
  * @company sunyard
  * @projectName pmc
  * @date 2019/5/28 14:54
- * @description: TODO
+ * @description: 测试持久层
  */
 @Mapper
 @Component("testDao")
